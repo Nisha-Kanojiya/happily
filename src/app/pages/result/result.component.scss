@@ -1,0 +1,20 @@
+.btn-right {
+    text-align: end;
+    .btn_yellow {
+        margin: 0 22px 0!important;
+        display: inline-block;
+        border: 0;
+    }
+}
+#contentToConvert:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../../../assets/images/sun_img1.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 9%;
+    height: 100%;
+    width: 100%;
+}

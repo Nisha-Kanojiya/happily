@@ -1,0 +1,40 @@
+  <!-- Header Start -->
+  <header>
+    <div class="main_header">
+      <div class="main_Menu">
+        <div class="container header-main-design-style">
+          <div class="row flexRow icon-and-nav-title-box">
+            
+            <div id="target" class="main_logo">
+               <a [routerLink]="['/']"><img src="./assets/images/logo.png" alt="img"></a>
+            </div>
+            
+            <div class="toggle-box">
+              <button class="toggle-btn">
+                  <i></i>
+              </button>
+            </div>
+            
+            <div class="menuSec nav-menu-head">
+              <ul id="menu">
+                <li class="active"><a [routerLink]="['/']">HOME</a></li>
+                <li><a style="cursor: pointer;" [routerLink]="['/contact-us']" routerLinkActive="active">CONTACT  US</a></li>
+                <!-- <li><a style="cursor: pointer;" [routerLink]="['/contact-us']" >SUPPORT </a></li> -->
+                <li><a style="cursor: pointer;" href="https://chatbox.my-happy-mind.com" target="_blank">HAPPLY-CHATBOX </a></li>
+                <li><a style="cursor: pointer;" (click)="resultPopup()" routerLinkActive="active">MY RESULTS</a></li>
+                <li class="signIn_div"><a style="cursor: pointer;" *ngIf="!flagLogout"
+                  [routerLink]="['/sign-up']" routerLinkActive="active">SIGN UP</a></li>
+                <li class="signIn_div"><a style="cursor: pointer;" *ngIf="!flagLogout"
+                  [routerLink]="['/login']" routerLinkActive="active">LOGIN</a></li>
+                  <li class="signIn_div"><a style="cursor: pointer;" *ngIf="flagLogout"
+                    (click)="logout()" >LOGOUT</a></li>
+              </ul>
+            </div>
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->

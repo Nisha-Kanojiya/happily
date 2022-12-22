@@ -1,0 +1,126 @@
+<app-header></app-header>
+
+<div class="know_section home-section-main">
+  <div class="container container-box-style">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 center">
+        <div class="know_text">
+          <div class="home-section-head">
+            <div class="page-title-head">
+              <h1 class="page-title">
+                Welcome to the HAPPILY EMOTIONAL-HEALTH TEST!
+              </h1>
+              <img src="./assets/images/border_center.png" alt="img" />
+            </div>
+            <div class="sub-heading-box">
+              <h5 class="you-can-take">
+                You can take the test anytime, privately and confidentially. No
+                ID is required.
+              </h5>
+              <div class="test-results-will-make-box">
+                <h5 class="make-you-aware">
+                  The test results will make you aware of your healing, healthy
+                  emotions (inner strengths). Leveraging
+                </h5>
+                <h5 class="will-help-you">
+                  them will help you lead a happy and successful life.
+                </h5>
+              </div>
+            </div>
+
+            <div class="let-face-it-section ">
+              <div class="let-face-it-text-box">
+                <p class="we-all-have"><b>
+                  Let’s face it. We all have good days and bad days, ups and
+                  downs in life, sometimes<br/>
+                  minor, other times major.</b>
+                  <a class="read-more-style"  *ngIf="!readMore">
+                    Click to read more: <i class="fa fa-arrow-down" (click)="trigger()"></i>
+                  </a>
+                  <a class="read-more-style" *ngIf="readMore" >
+                    Click to read less: <i class="fa fa-arrow-up" (click)="trigger()"></i>
+                  </a>
+                </p>
+                <div class="hide-text" *ngIf="readMore">
+                  <h5 class="read-more-style">
+                    Stress, anxiety, worry, anger, violence, fear, frustration,
+                    diffidence, loss of self-esteem, sadness, mood swings,
+                    memory loss, lack of concentration, sleeplessness,
+                    self-destructive (suicidal) thoughts, addictions for food,
+                    alcohol, drugs, sex, money and power, unhappy relationships,
+                    broken families, problems at work, etc.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="let-face-it-section title-box">
+              <div class="let-face-it-text-box">
+                <h5 class="we-all-have">
+                  We all have difficult situations. Life is not perfect.</h5>
+                <h5 class="we-all-have">The BIG
+                  PROBLEM is not being aware of our own emotional states, and
+                  doing nothing to make our minds healthy, strong and resilient
+                  to face challenges, while also being ready to enjoy good
+                  times!
+                </h5>
+              </div>
+            </div>
+            <div class="let-face-it-section title-box">
+              <div class="let-face-it-text-box">
+                <img
+                  class="border-center-img m-0"
+                  src="./assets/images/border_center.png"
+                  alt="img"
+                />
+                <h5 class="we-all-have">
+                  A proven way to make our minds healthy and happy is to first understand what goes on 
+                  in our minds.
+                  <a class="read-more-style" *ngIf="!readNewMore" >
+                    Click to read more about the MIND: <i class="fa fa-arrow-down" (click)="triggerSecond()"></i>
+                  </a>
+                  <a class="read-more-style" *ngIf="readNewMore">
+                    Click to read less about the MIND: <i class="fa fa-arrow-up" (click)="triggerSecond()"></i>
+                  </a>
+                </h5>
+                <div class="hide-text" *ngIf="readNewMore">
+                  <h5 class="read-more-style">
+                    Mind is a constant process of emotions, feelings, thoughts, action plans. That runs with 
+the help of our brain. And the brain interacts with our body. This test is about 
+understanding our own emotions. They are the hidden hand behind our behavior.
+                  </h5>
+                  <img
+                  class="border-center-img"
+                  src="./assets/images/Text-image.jpg"
+                  alt="img" height="400px"
+                />
+                </div>
+              </div>
+            </div>
+            <div class="let-face-it-section title-box" *ngIf="!userLogin">
+            <a [routerLink]="['/login']" class="btn btn_yellow m-0" style="margin-right: 12px !important;">Signup/Login</a>
+            </div>
+            <div class="let-face-it-section title-box">
+                <h5 class="we-all-have red-text">
+                  Your data is privacy protected and anonymous. We never ask for your ID.
+                </h5>
+                <p class="we-all-have">
+                 <b> HAPPILY also gives you access to the</b>
+                  <a class="read-more-style"  href="https://chatbox.my-happy-mind.com" target="_blank">
+                    HAPPILY Privacy Protected, Anonymous
+                    Group Chat App
+                  </a>
+                  <b>and the</b> 
+                  <a class="read-more-style" [routerLink]="['/plans']">
+                    HAPPILY Directory of Products & Services
+                  </a>
+                  <b>to improve brains
+and minds. Click on the links to go to those websites!</b>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

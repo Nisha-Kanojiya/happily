@@ -1,0 +1,246 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+
+<div class="emotionHealthPg">
+  <div class="pdf-btn-top">
+    <button (click)="generateHtmltoPDF()" class="btn_yellow">
+      Download pdf/print
+    </button>
+  </div>
+  <div class="resultSec know_section" id="contentToConvert" #contentToConvert>
+    <div class="container">
+      <div class="secHead">
+        <div class="">
+          <div class="title-box">
+            <h1 class="page-title">Your emotional health</h1>
+            <img src="./assets/images/border_center.png" alt="img" />
+          </div>
+        </div>
+        <p>
+          Be constantly aware of your emotions! Awareness is the foundation for
+          improvement. We have grouped your answers in the self-test into 10
+          states of emotional health. Know which ones to avoid and which ones to
+          leverage.
+        </p>
+        <div class="graph-title text-align">
+          <span class="left">Unhealthy Emotional <span>States</span> </span>
+          <span class="right">Healthy Emotional <span>States</span> </span>
+        </div>
+      </div>
+      <div class="chart">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="left-table">
+              <div class="table-content-element">
+                <p>Calm</p>
+              </div>
+              <div class="table-content-element">
+                <p>Love</p>
+              </div>
+              <div class="table-content-element">
+                <p>Confidence</p>
+              </div>
+              <div class="table-content-element">
+                <p>Admiration</p>
+              </div>
+              <div class="table-content-element">
+                <p>Generosity</p>
+              </div>
+              <div class="table-content-element">
+                <p>Indifference</p>
+              </div>
+              <div class="table-content-element">
+                <p>Content</p>
+              </div>
+              <div class="table-content-element">
+                <p>Humility</p>
+              </div>
+              <div class="table-content-element">
+                <p>Cheerfulness</p>
+              </div>
+              <div class="table-content-element">
+                <p>Zestfulness</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="dx-viewport demo-container">
+              <!-- <div id="chart" dx-chart="chartOptions"></div> -->
+              <div
+                id="chart"
+                style="
+                  display: block;
+                  width: 100% !important;
+                  height: auto;
+                  position: relative;
+                "
+              >
+                <canvas
+                  baseChart
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [plugins]="barChartPlugins"
+                  width="300"
+                  height="150"
+                  [chartType]="barChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"
+                  [legend]="barChartLegend"
+                  id="canva"
+                >
+                </canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="left-table">
+              <div class="table-content-element">
+                <p>Anger</p>
+              </div>
+              <div class="table-content-element">
+                <p>Hatred</p>
+              </div>
+              <div class="table-content-element">
+                <p>Fear</p>
+              </div>
+              <div class="table-content-element">
+                <p>Jealousy</p>
+              </div>
+              <div class="table-content-element">
+                <p>Greed</p>
+              </div>
+              <div class="table-content-element">
+                <p>Desire</p>
+              </div>
+              <div class="table-content-element">
+                <p>Discontent</p>
+              </div>
+              <div class="table-content-element">
+                <p>Egotism</p>
+              </div>
+              <div class="table-content-element">
+                <p>Sadness</p>
+              </div>
+              <div class="table-content-element">
+                <p>Fatigue</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12 center">
+            <div class="multiBtns">
+              <a
+                href="#"
+                class="webBtn"
+                data-toggle="modal"
+                data-target="#detailModal"
+                >Details</a
+              ><br />
+              <a [routerLink]="['/solutions']" class="webBtn"
+                >Which solutions are best for me?
+              </a>
+            </div>
+            <p>Mind changes. Take your self-reflection test monthly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+<!-- Details modal -->
+<div
+  class="modal fade"
+  id="detailModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="basicModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="btn-right center">
+      <button (click)="htmltoPdfDetails()" class="btn_yellow">
+        Download pdf/print
+      </button>
+    </div>
+    <div class="modal-content">
+      <div class="modal-body" id="contentToConvertPDF">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+        <h2>Your answers to different questions in the self-reflection test</h2>
+        <div class="table-responsive detail-responsive-table">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <!-- <th  scope="col" class="col-md-1">S.R. NO.</th> -->
+                <th scope="col" class="col-md-2">Emotional State</th>
+                <th scope="col" class="col-md-4">Unhealthy Feelings</th>
+                <th scope="col" class="col-md-1">Answer Rating</th>
+                <th scope="col" class="col-md-4">Healthy Feelings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr *ngFor="let item of emotionalState; let i = index">
+                <td style="text-transform:capitalize;">
+                  {{item.emotionalState}}
+                </td>
+                <td>
+                  <ul>
+                    <li *ngFor="let item of item.questionAnswers"> {{item.negativeLabel}}</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li *ngFor="let item of item.questionAnswers"><b> {{item.answer}}</b></li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li *ngFor="let item of item.questionAnswers"> {{item.positiveLabel}}</li>
+                  </ul>
+                </td>
+              </tr> -->
+              <tr *ngFor="let item of answerDetails; let i = index">
+                <!-- <td>
+                  {{item.questionId}}
+                </td> -->
+                <td style="text-transform: capitalize">
+                  {{ item.emotionalState }}
+                </td>
+                <td>
+                  <ul>
+                    <li>{{ item.negativeLabel }}</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <b> {{ item.answer }}</b>
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>{{ item.positiveLabel }}</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

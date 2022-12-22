@@ -1,0 +1,494 @@
+@media only screen and (min-width: 1000px) {
+
+    .main_Menu .container, footer .container, .Social_section .container{ max-width: 1425px; width: 100%; margin: 0 auto; padding: 0px 90px; }
+
+    .detail-responsive-table{ overflow: visible; }
+    
+    
+    }
+    
+    @media only screen and (min-width: 967px) and (max-width: 1200px){
+    
+    .slicknav_menu {display: block;}
+    .slicknav_menu {background: #268027;}
+    .slicknav_menu .slicknav_icon-bar {background-color: #fcd420;}
+    .slicknav_nav a br {display: none;}
+    .slicknav_nav a:hover {background: #fcd420;}
+    .menuSec{display: none;}
+    /*.main_logo{left: 0;background: black;top: 0;width: 100%;align-content: center;justify-content: center;display: flex;flex-direction: column;height: 100%;}*/
+    /* .main_logo img{left: 0;width: 100%; display: table;} */
+    .main_logo img{ height: 70px; }
+    .signIn_div {left: 0;text-align: left;/* margin: 50px 0 0; */}
+    .signIn_div a {font-size: 13px;padding: 3px 5px;width: auto;}
+    .main_slider {height: auto;}
+    
+    .health_text {padding: 25px 0 25px;margin: 20px 0;}
+    .health_text h3 {font-size: 19px;line-height: 25px;text-align: left;}
+    .health_text h3 br {display: none;}
+    .health_text p {font-size: 16px;line-height: 20px;text-align: left;margin: 10px 0 0;}
+    
+    .Customized_section {height: auto;}
+    .Customized_section h4 {font-size: 18px;line-height: 29px;height: auto;margin-bottom: 0;padding: 20px;}
+    
+    .know_text {margin-top: 10px;margin-bottom: 80px;}
+    .know_text h3 {font-size: 24px;line-height: 30px;}
+    .know_text p {margin: 10px 0;font-size: 18px;line-height: 30px;}
+    .know_CenterImg img {margin: 20px 0 20px;}
+    .know_text h3 {font-size: 30px;line-height: 35px;}
+    .know_text h3 br{display: none;}
+    
+    .Free_Box {margin-bottom: 30px;}
+    .Free_Box:after {height: 259px;}
+    .Free_BoxImg img {width: 100%;margin: 0 0 20px;}
+    .Free_BoxText h4 {font-size: 21px;line-height: 25px;}
+    .Free_BoxText a {font-size: 16px;line-height: 25px;padding: 7px 15px;margin: 10px 0;}
+    .Free_BoxText p {font-size: 15px;line-height: 22px;}
+    
+    .Social_section h2 {font-size: 34px;line-height: 40px;padding: 0% 0 3% 0;}
+    
+    .know_section2 {padding: 0;}
+    .Social_section {height: auto;}
+    .Social_section p {width: 90%;font-size: 16px;line-height: 28px;}
+    
+    .footer_Box1 img {width: 70%;}
+    .footer_Box1 h3 {font-size: 18px;}
+    .footer_Box1 p {margin: 10px 0 10px;}
+    .footer_Box2 ul li a {font-size: 15px;line-height: 20px;}
+    
+    .info_div {margin: 0 0 0px;}
+    .info_div ul li a {font-size: 15px;}
+    .footer_social ul li a {font-size: 37px;margin: 10px 0px 0 0px;}
+    
+    .copy_right {padding: 10px 0;}
+    .copy_right p {font-size: 13px;line-height: 20px;}
+    
+    .contact_text .know_text {margin: 0;}
+    .contact_text .know_text br {display: none;}
+    .know_text img {margin: 20px 0;}
+    .contacy_form {padding: 20px 10px;}
+    .contacy_form input[type="text"], .contacy_form input[type="email"], .contacy_form input[type="tel"], .contacy_form input[type="password"], .contacy_form select {height: 45px;margin: 0 0 10px;font-size: 13px;}
+    .contacy_form span b {font-size: 15px;}
+    .contacy_form label {font-size: 15px;}
+    .contacy_form h4 {font-size: 18px;}
+    .know_text h4 {font-size: 17px;margin-bottom: 10px;}
+    
+    .Customized_section2 {padding-top: 30px;}
+    .Customized_section2 h4 {height: auto;margin: 0;}
+    .Customized_section2 .know_text {margin-top: 10px;margin-bottom: 10px;}
+    .productsKnwn {padding: 0;}
+    .productsKnwn .know_text {margin: 0;}
+    .productsKnwn .know_text br {display: none;}
+    .search_div {top: -10px;}
+    .search_div input[type="text"] {width: 65%;height: 40px;font-size: 14px;margin: 0;float: none;display: inline-block;box-shadow: 0px 0px 4px black;}
+    .search_div button {font-size: 13px;padding: 0 10px;height: 40px;}
+    .ul_List ul li {font-size: 17px;line-height: 16px;padding: 15px 0px 0px;width: 100%;}
+    .rating > label {font-size: 10px;}
+    .rating > label:before {font-size: 21px;}
+    
+    .benefitsSec .know_text br {display: none;}
+    .benefitsSec .know_text {margin-bottom: 10px;}
+    
+    .questionSec .know_text br {display: none;}
+    .questionSec .know_text {margin-bottom: 10px;}
+    .questionSec h5 {font-size: 16px;  }
+    .btn_yellow {font-size: 14px;line-height: 23px;padding: 6px 25px;margin: 20px 0 20px;}
+    
+    
+    }
+    @media only screen and (min-width: 768px) and (max-width: 966px){
+        
+            /*.flexRow{display: block;}*/
+    .slicknav_menu {display: block;}
+    
+    
+    .slicknav_nav a br {display: none;}
+    .slicknav_nav a:hover {background: #fcd420;}
+    .menuSec{display: none;}
+    /* .main_logo{left: 0;background: black;top: 0;width: 100%;align-content: center;justify-content: center;display: flex;flex-direction: column;height: 100%;}
+    .main_logo img{left: 20px;width: 80%; display: table;} */
+    .signIn_div {left: 0;text-align: left;/* margin: 50px 0 0; */}
+    .signIn_div a {font-size: 13px;padding: 3px 0px;}
+    .main_slider {height: auto;}
+    .main_slider {height: auto;}
+    
+    .health_text {padding: 25px 0 25px;margin: 20px 0;}
+    .health_text h3 {font-size: 19px;line-height: 25px;text-align: left;}
+    .health_text h3 br {display: none;}
+    .health_text p {font-size: 16px;line-height: 20px;text-align: left;margin: 10px 0 0;}
+    
+    .Customized_section {height: auto;}
+    .Customized_section h4 {font-size: 18px;line-height: 29px;height: auto;margin-bottom: 0;padding: 20px;}
+    
+    .know_text {margin-top: 10px;margin-bottom: 80px;}
+    .know_text h3 {font-size: 24px;line-height: 30px;}
+    .know_text p {margin: 10px 0;font-size: 18px;line-height: 30px;}
+    .know_CenterImg img {margin: 20px 0 20px;}
+    .know_text h3 {font-size: 30px;line-height: 35px;}
+    .know_text h3 br{display: none;}
+    
+    .Free_Box {margin-bottom: 30px;}
+    .Free_Box:after {height: 186px;}
+    .Free_BoxImg img {width: 100%;margin: 0 0 20px;}
+    .Free_BoxText h4 {font-size: 17px;line-height: 22px;padding: 0px 10px;}
+    .Free_BoxText a {font-size: 16px;line-height: 25px;padding: 7px 15px;margin: 10px 0;}
+    .Free_BoxText p {font-size: 15px;line-height: 22px;}
+    
+    .Social_section h2 {font-size: 34px;line-height: 40px;padding: 0% 0 3% 0;}
+    
+    .know_section2 {padding: 0;}
+    .Social_section {height: auto;}
+    .Social_section p {width: 90%;font-size: 16px;line-height: 28px;}
+    
+    .footer_Box1 img {width: 70%;}
+    .footer_Box1 h3 {font-size: 18px;}
+    .footer_Box1 p {margin: 10px 0 10px;}
+    .footer_Box2 ul li a {font-size: 15px;line-height: 20px;}
+    
+    .info_div {margin: 0 0 0px;}
+    .info_div ul li a {font-size: 15px;}
+    .footer_social ul li a {font-size: 37px;margin: 10px 0px 0 0px;}
+    
+    .copy_right {padding: 10px 0;}
+    .copy_right p {font-size: 13px;line-height: 20px;}
+    
+    .contact_text .know_text {margin: 0;}
+    .contact_text .know_text br {display: none;}
+    .know_text img {margin: 20px 0;}
+    .contacy_form {padding: 20px 10px;}
+    .contacy_form input[type="text"], .contacy_form input[type="email"], .contacy_form input[type="tel"], .contacy_form input[type="password"], .contacy_form select {height: 45px;margin: 0 0 10px;font-size: 13px;}
+    .contacy_form span b {font-size: 15px;}
+    .contacy_form label {font-size: 15px;}
+    .contacy_form h4 {font-size: 18px;}
+    .know_text h4 {font-size: 17px;margin-bottom: 10px;}
+    
+    .Customized_section2 {padding-top: 30px;}
+    .Customized_section2 h4 {height: auto;margin: 0;background-size: 698px;}
+    .Customized_section2 .know_text {margin-top: 10px;margin-bottom: 10px;}
+    .productsKnwn {padding: 0;}
+    .productsKnwn .know_text {margin: 0;}
+    .productsKnwn .know_text br {display: none;}
+    .search_div {top: -10px;}
+    .search_div input[type="text"] {width: 65%;height: 40px;font-size: 14px;margin: 0;float: none;display: inline-block;box-shadow: 0px 0px 5px black;}
+    .search_div button {font-size: 13px;padding: 0 10px;height: 40px;}
+    .ul_List ul li {font-size: 17px;line-height: 16px;padding: 15px 0px 0px;width: 100%;}
+    .rating > label {font-size: 10px;}
+    .rating > label:before {font-size: 21px;}
+    
+    .benefitsSec .know_text br {display: none;}
+    .benefitsSec .know_text {margin-bottom: 10px;}
+    
+    .questionSec .know_text br {display: none;}
+    .questionSec .know_text {margin-bottom: 10px;}
+    .questionSec h5 {font-size: 14px;
+        padding: 0;
+        margin: 30px 0 0;
+        height: auto; }
+    .btn_yellow {font-size: 14px;line-height: 23px;padding: 6px 25px;margin: 20px 0 20px;}
+    .blogPg .blogMain .blog h5{font-size: 28px; line-height: 34px; }
+    .nav-tabs li{    width: 29%;    display: flex; }
+        .chart{ overflow-x: scroll; }
+        .numbering td{     width: 108px; padding: 5px 10px }
+    }
+
+
+    @media only screen  and (max-width: 1300px){
+
+        header .flexRow{ display: block;  }
+        .toggle-box{ display: block; }
+        .menuSec{ position:absolute; left: 0; top:100%; z-index: 999; background: #000; width: 100%; display: none; }
+        .menuSec ul{ display: block; }
+        .menuSec ul li{ float: none; padding: 8px 20px; margin: 0;  }
+        .menuSec ul li a{ margin: 0 !important; }
+        .menuSec ul li a br{ display: none; }
+    }
+
+    @media only screen  and (max-width: 1199px){
+
+        .toggle-box{ margin: 16px 25px 0 0; }
+    }
+
+    @media only screen  and (max-width: 999px){
+        .main_logo img{ height: 70px;}
+    }
+
+    @media only screen  and (max-width: 767px){
+
+        .subject input{ position: static; width: 100%; margin: 10px 0 0; }
+        .note{ font-size: 10px; line-height: normal; }
+        .text-align .right { margin-left:15px; } 
+        .contacy_form textarea{ height: 85px !important; }
+        .toggle-box{ margin: 30px 25px 0 0; }
+    .scrollPortion { width: 100%; overflow: auto; }
+    .scrollPortion table.table{ width: 700px; max-width:none; }
+    .product-modal .modal-dialog{ width: 95%;}
+    .product-modal .modal-dialog .modal-body{ padding: 40px 15px;}
+    .category-list-box{ display: block;}
+    .category-list{ margin: 0 0 15px; width: 100%;}
+    .product-list-box .category-list h3{ min-height: auto;}
+    .flexRow{display: block;}
+    .slicknav_menu {display: block;}
+    .slicknav_menu {background: #268027;}
+    .slicknav_menu .slicknav_icon-bar {background-color: #fcd420;}
+    .slicknav_nav a br {display: none;}
+    .slicknav_nav a:hover {background: #fcd420;}
+    .main_header {padding: 0 0 12px 0;}
+    
+
+
+    
+
+    .main_logo{ padding:12px 25px 0; margin: 0; }
+    /* .main_logo img{ height: 60px; width: auto; } */
+    /* .main_logo{left: 0;background: black;top: 0;width: 100%;}
+    .main_logo img{left: 0;width: 35%;margin: 10px auto;display: table;} */
+    .signIn_div {left: 0;text-align: left;margin: 0px 0 0; padding: 7px 15px; }
+    .signIn_div a {font-size: 14px;padding: 5px;}
+    .main_slider {height: auto;}
+    
+    .health_text {padding: 25px 0 25px;margin: 20px 0;}
+    .health_text h3 {font-size: 19px;line-height: 25px;text-align: left;}
+    .health_text h3 br {display: none;}
+    .health_text p {font-size: 16px;line-height: 20px;text-align: left;margin: 10px 0 0;}
+    
+    .Customized_section h4 {background-image: url(../images/custom_bg1.png); font-size: 16px;line-height: 26px;background-size: cover;height: 150px;margin-bottom: 40px;}
+    .know_text {margin-top: 10px;margin-bottom: 80px;}
+    .know_text h3 {font-size: 24px;line-height: 30px;}
+    .know_text p {margin: 10px 0 0px;font-size: 14px;line-height: 22px;}
+    .know_CenterImg img {margin: 20px 0 20px;}
+    .know_text h3 {font-size: 18px;line-height: 25px;}
+    .know_text h3 br{display: none;}
+    .Customized_section{}
+    .Free_Box {margin-bottom: 30px;}
+    .Free_Box:after {height: 90px;top: 265px;}
+    .Free_BoxImg img {width: 100%;margin: 0 0 20px;}
+    .Free_BoxText h4 {font-size: 18px;line-height: 25px;}
+    .Free_BoxText h4 br {display: none;}
+    .Free_BoxText a {font-size: 16px;line-height: 25px;padding: 7px 15px;margin: 10px 0;}
+    .Free_BoxText p {font-size: 15px;line-height: 22px;}
+    
+    .Social_section h2 {font-size: 24px;line-height: 30px;padding: 0% 0 3% 0;}
+    
+    .know_section2 {padding: 0;}
+    .Social_section {height: auto;}
+    .Social_section p {width: 100%;font-size: 14px;line-height: 23px;}
+    
+    .footer_Box1 img {width: 50%;}
+    .footer_Box1 h3 {font-size: 16px;}
+    .footer_Box1 p {margin: 10px 0 10px;}
+    .footer_Box2 ul li a {font-size: 13px;line-height: 20px;}
+    
+    .info_div {margin: 0 0 0px;}
+    .info_div ul li a {font-size: 13px;}
+    .footer_social ul{margin-top: 10px;}
+    .footer_social ul li {display: inline-block;padding: 0 10px;}
+    .footer_social ul li a {font-size: 30px;margin: 10px 0px 0 0px;}
+    
+    .copy_right {padding: 10px 0;}
+    .copy_right p {font-size: 13px;line-height: 20px;}
+    
+    .contact_text .know_text {margin: 0;}
+    .contact_text .know_text br {display: none;}
+    .know_text img {margin: 20px auto;}
+    .contacy_form {padding: 20px 10px;}
+    .contacy_form input[type="text"], .contacy_form input[type="email"], .contacy_form input[type="tel"], .contacy_form input[type="password"], .contacy_form select {height: 40px;margin: 0 0 10px;font-size: 13px;}
+    .contacy_form span b {font-size: 15px;}
+    .contacy_form label {font-size: 15px;}
+    .contacy_form h4 {font-size: 15px;}
+    .know_text h4 {font-size: 17px;margin-bottom: 10px;}
+    
+    .Customized_section2 {padding-top: 30px;}
+    .Customized_section2 h4 {height: auto;margin: 0;}
+    .Customized_section2 .know_text {margin-top: 10px;margin-bottom: 10px;}
+    .productsKnwn {padding: 0;}
+    .productsKnwn .know_text {margin: 0;}
+    .productsKnwn .know_text br {display: none;}
+    .search_div {top: -10px;}
+    .search_div input[type="text"] {width: 65%;height: 40px;font-size: 14px;margin: 0;float: none;display: inline-block;}
+    .search_div button {font-size: 13px;padding: 0 10px;height: 40px;}
+    .ul_List ul li {font-size: 15px;line-height: 14px;padding: 15px 0px 0px;width: 100%;}
+    
+    .benefitsSec .know_text br {display: none;}
+    .benefitsSec .know_text {margin-bottom: 10px;}
+    
+    .questionSec .know_text br {display: none;}
+    .questionSec .know_text {margin-bottom: 10px;}
+    .questionSec h5 {font-size: 16px; height: auto; }
+    .btn_yellow {font-size: 14px;line-height: 23px;padding: 6px 25px;margin: 20px 0 20px;}
+    
+    .nav-tabs > li{ float: none; width: 100%; margin: 0 0 15px; }
+    .nav-tabs > li:last-child{ margin: 0; }
+
+    .modal-dialog{ width:calc(100% - 30px); margin: 30px auto 0;}
+    .modal-dialog .modal-body{ padding: 20px 15px;}
+    .modal-dialog h2{ font-size: 26px; line-height: normal; }
+    .comingSoonSec{ text-align: center; }
+    .resultSec .secHead .text-align{ padding: 0; text-align: center; }
+    .table-responsive table.table{ max-width: none; width: 1100px; }
+    .modal-dialog .table-responsive table.table  thead th{ padding: 15px 5px !important; }
+    
+    .footer_Box2 ul li a::after{ bottom: 3px;  }
+        
+    }
+    @media only screen and (min-width: 300px) and (max-width: 479px){
+        
+    .flexRow{display: block;}
+    .slicknav_menu {background: #268027;}
+    .slicknav_menu .slicknav_icon-bar {background-color: #fcd420;}
+    .slicknav_nav a br {display: none;}
+    .slicknav_nav a:hover {background: #fcd420;}
+    .main_header{padding: 0 0 10px 0;}
+    .menuSec{display: none;}
+    /* .main_logo{left: 0;background: black;top: 0;width: 100%;}
+    .main_logo img{left: 0;width: 60%;margin: 10px auto 0px;display: table;} */
+    .signIn_div {left: 0;text-align: left;margin:0;}
+    .signIn_div a {font-size: 13px;padding: 3px 0px;}
+    .main_slider {height: auto;}
+    
+    .health_text {padding: 25px 0 25px;margin: 20px 0;}
+    .health_text h3 {font-size: 19px;line-height: 25px;text-align: left;}
+    .health_text h3 br {display: none;}
+    .health_text p {font-size: 16px;line-height: 20px;text-align: left;margin: 10px 0 0;}
+    
+    .Customized_section h4 {background-image: url(../images/custom_bg1.png);height: auto;font-size: 15px;line-height: 21px;background-size: 317px 107px;margin-bottom: 40px;}
+    
+    .know_text {margin-top: 10px;margin-bottom: 80px;}
+    .know_text h3 {font-size: 24px;line-height: 30px;}
+    .know_text p {margin: 10px 0 0px;font-size: 14px;line-height: 22px;}
+    .know_CenterImg img {margin: 20px 0 20px;}
+    .know_text h3 {font-size: 18px;line-height: 25px;}
+    .know_text h3 br{display: none;}
+    
+    .Free_Box {margin-bottom: 30px;}
+    .Free_Box:after {height: 183px;top: 138px;}
+    .Free_BoxImg img {width: 92%;margin: 0 0 20px;}
+    .Free_BoxText h4 {font-size: 15px;line-height: 21px;padding: 0px 7px;}
+    .Free_BoxText h4 br {display: none;}
+    .Free_BoxText a {font-size: 14px;line-height: 22px;padding: 7px 15px;margin: 10px 0;}
+    .Free_BoxText p {font-size: 15px;line-height: 22px;}
+    
+    .Social_section h2 {font-size: 24px;line-height: 30px;padding: 0% 0 3% 0;}
+    
+    .know_section2 {padding: 0;}
+    .Social_section {height: auto;}
+    .Social_section p {width: 100%;font-size: 14px;line-height: 23px;}
+    
+    .footer_Box1 img {width: 50%;}
+    .footer_Box1 h3 {font-size: 16px;}
+    .footer_Box1 p {margin: 10px 0 10px;}
+    .footer_Box2 ul li a {font-size: 13px;line-height: 20px;}
+    
+    .info_div {margin: 0 0 0px;}
+    .info_div ul li a {font-size: 13px;}
+    .footer_social ul{margin-top: 10px;}
+    .footer_social ul li {display: inline-block;padding: 0 10px;}
+    .footer_social ul li a {font-size: 30px;margin: 10px 0px 0 0px;}
+    
+    .copy_right {padding: 10px 0;}
+    .copy_right p {font-size: 13px;line-height: 20px;}
+    
+    .contact_text .know_text {margin: 0;}
+    .contact_text .know_text br {display: none;}
+    .know_text img {margin: 20px auto;width: 86%;}
+    .contacy_form {padding: 20px 10px;}
+    .contacy_form input[type="text"], .contacy_form input[type="email"], .contacy_form input[type="tel"], .contacy_form input[type="password"], .contacy_form select, .contacy_form textarea {height: 40px;margin: 0 0 10px;font-size: 13px;}
+    .contacy_form span b {font-size: 15px;}
+    .contacy_form label {font-size: 15px;}
+    .contacy_form h4 {font-size: 15px;}
+    .know_text h4 {font-size: 17px;margin-bottom: 10px;}
+    
+    .Customized_section2 {padding-top: 30px;}
+    .Customized_section2 h4 {height: auto;margin: 0;}
+    .Customized_section2 .know_text {margin-top: 10px;margin-bottom: 10px;}
+    .productsKnwn {padding: 0;}
+    .productsKnwn .know_text {margin: 0;}
+    .productsKnwn .know_text br {display: none;}
+    .search_div {top: -10px;}
+    .search_div input[type="text"] {width: 100%;height: 40px;font-size: 14px;margin: 0;float: none;display: block;box-shadow: 0px 0px 4px #1e6b22;margin: 32px 0;}
+    .search_div button {font-size: 13px;padding: 0 10px;height: 40px;}
+    .ul_List ul li {font-size: 15px;line-height: 14px;padding: 15px 0px 0px;width: 100%;}
+    
+    .benefitsSec .know_text br {display: none;}
+    .benefitsSec .know_text {margin-bottom: 10px;}
+    
+    .questionSec .know_text br {display: none;}
+    .questionSec .know_text {margin-bottom: 10px;}
+    .questionSec h5 {font-size: 16px;}
+    .btn_yellow {font-size: 14px;line-height: 23px;padding: 6px 25px;margin: 20px 0 20px;}
+    /*.nav-tabs>li{ float: none; display: inline-table; }*/
+/*    .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{     display: block;
+        border: 1px solid #e5ca02;
+        height: 49px;
+        text-align: center; }
+        .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{display:block;}*/
+        .to{height:50px; }
+        .composeMail label{margin: 3px 0!important; }
+        .composeMailText textarea{ width: 94%; }
+        .resultSec h3 {
+        font-size: 28px;
+        line-height: 34px;}
+        .chart{overflow-x:scroll; }
+    .Free_section .know_text h3 {
+        line-height: 34px;
+        padding: 0 4%;
+        font-size: 24px;
+    }
+    .blogPg .blogMain .blog h5 {
+        font-size: 26px;
+        margin-bottom: 1px;
+        line-height: 30px;
+        padding-top: 15px;
+    }
+    .solutionSec h3 {
+        font-size: 28px;
+    line-height: 36px;}
+    .solutionSec .rating {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .solutionSec li{ text-align: center; }
+    .solutionSec .webBtn{margin-bottom:20px; }
+    .composeMailText textarea{ width: 100%; }
+    .questionSec .btn_yellow {
+        margin: 19px 0 0 0;
+    }
+    
+    .Customized_section h4{
+        background-size: 290px 83px;
+        font-size: 18px;
+        line-height: 19px;
+        padding: 19px 8%;
+        }
+    }
+    
+    @media only screen and (width: 320px){
+        .Customized_section h4{
+        background-size: 290px 83px;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 19px 8%;
+        }
+        
+    }
+    
+    @media only screen and (width: 375px){
+    .Customized_section h4 {
+    background-size: 343px 110px;}
+    .know_text img {
+    margin: 0px 0;}
+    }
+    
+    @media only screen and (width: 600px){
+        .Customized_section h4 {
+        background-image: url(../images/custom_bg1.png);
+        font-size: 16px;
+        line-height: 26px;
+        background-size: 526px 123px;
+           height: 125px;
+           padding: 20px 8% 0 8%;
+        margin-bottom: 40px;
+    }
+        
+    }
+    
+    

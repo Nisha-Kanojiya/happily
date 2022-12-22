@@ -1,0 +1,73 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+<!-- know_section -->
+<div class="know_section contact_text">
+  <div class="container">
+    
+        <div class="know_text">
+         
+          <div class="title-box">
+            <h1 class="page-title">Contact us for feedback and <br>non-private questions</h1>
+            <img src="./assets/images/border_center.png" alt="img">  
+          </div>
+          
+          <p><b>Members, product and service providers, including faith based service organizations</b></p>
+          <p>Give us your feedback, opinions, questions and suggestions for improvement.</p>
+          <p>Contact us to include your services as part of action plans provided by HAPPILY.</p>
+          <h4 class="contactus-email"><b><a>Email: team@my-happy-mind.com</a></b></h4>
+          <!-- href="mailto:team@my-happy-mind.com" target="_top" -->
+        </div>
+      
+    <div class="row">
+      <div class="col-md-10 col-sm-10 col-xs-12 center">
+        <div class="contacy_form">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" autocomplete="off">
+            <input id="name" type="text" placeholder="Name (optional)"
+            formControlName="name" />
+            <input id="email" type="email" formControlName="email"
+            placeholder="Email Address" required />
+            <div class="invalid-feed"
+            *ngIf="(contactFormControl.email.touched || submitted) && contactFormControl.email.errors?.required">
+            Please enter email address
+          </div>
+          <div class="invalid-feed"
+            *ngIf="contactFormControl.email.touched && contactFormControl.email.errors?.email">
+            Enter a valid email address
+          </div>
+          <!-- <tr><td>Integer &gt;= 0</td><td><input id="uintTextBox"></td></tr>
+          <tr><td>Integer &gt;= 0 and &lt;= 500</td><td><input id="intLimitTextBox"></td></tr> -->
+        <input id="intTextValue" type="text" maxlength="12" formControlName="contact"
+        placeholder="Phone Number" required />
+        <div class="invalid-feed"
+        *ngIf="(contactFormControl.contact.touched || submitted) && contactFormControl.contact.errors?.required">
+        Please enter phone number
+      </div>  
+      <div class="invalid-feed" *ngIf="contact.errors?.pattern">
+        Please enter valid phone number.
+      </div> 
+          <textarea formControlName="message" id="message" rows="5"
+                            placeholder="Message" required></textarea>
+                            <div class="invalid-feed"
+                            *ngIf="(contactFormControl.message.touched || submitted) && contactFormControl.message.errors?.required">
+                            Please enter message
+                          </div>   
+          <input type="submit" class="webBtn cont-snd-btn" value="Submit">
+        </form>
+          <!-- <form method="post" url="http://dev.my-happy-mind.com/contactus">
+            <input type="text" name="morning" placeholder="Name (optional)" >
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="tel" id="phone" name="phonenumber" placeholder="Phone Number">
+            <textarea placeholder="Message" name="message"></textarea>
+            <input type="submit" value="Send" class="webBtn cont-snd-btn">
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- know_section -->
+
+  <!-- <app-repeated-text></app-repeated-text> -->
+<app-footer></app-footer>

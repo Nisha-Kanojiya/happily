@@ -1,0 +1,180 @@
+.pdf-btn-top {
+    text-align: end;
+    .btn_yellow {
+        margin: 0px 20px 0!important;
+        display: inline-block;
+        border: 0;
+    }
+}
+.emotionHealthPg .resultSec {
+    padding: 0 !important;
+}
+
+div#chart {
+    margin-left: 0;
+}
+.right-table {
+    .table-content-element {
+        p {
+            margin-bottom: 6px !important;
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+}
+.left-table {
+.table-content-element {
+    p {
+        margin-bottom: 6px !important;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+}
+
+.table-content-element {
+    width: 10%;
+}
+
+.emotionHealthPg {
+    .resultSec {
+        .secHead {
+            margin-bottom: 30px;
+        }
+    }
+} 
+  
+.chart {
+    .col-md-2 {
+        padding: 1px
+    }
+    .col-md-8 {
+        padding-left: 1px
+    }
+}
+.graph-title .left {
+    padding-top: 30px;
+    position: relative;
+    width: 40%;
+    text-align: center !important;
+}
+.graph-title .right {
+    padding-top: 30px;
+    position: relative;
+    width: 70%;
+    text-align: center !important; 
+} 
+.resultSec .btn_yellow {
+    position: relative;
+    z-index: 2;
+}
+#contentToConvert:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../../../assets/images/sun_img1.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 9%;
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: 991px) {
+    .pdf-btn-top { 
+        .btn_yellow {
+        margin: 0px 20px 10px !important;
+        display: inline-block;
+        border: 0;
+    }
+    }
+    body {
+        padding: 100px 0 0 !important;
+    }
+    .chart {
+        .row {
+            // display: flex;
+            // width: 1040px;
+            .col-md-8 {
+                width: 50%;
+                canvas {
+                    width: 100% !important;
+                }
+                #chart {
+                    width: 100% !important;
+                }
+            }
+            .col-md-2 {
+                min-width: 125px !important;
+            }
+        }
+    }
+    .right-table {
+        position: absolute;
+        right: -258px;
+    }
+    span.left {
+        width: 50% !important;
+    }
+    .graph-title {
+        span {
+            display: block;
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+    span.right {
+        width: 50% !important;
+    }
+   
+}
+
+// * {
+//     color-adjust: exact !important;
+//     -webkit-print-color-adjust: exact !important;  
+// }
+
+
+.left-table {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-table {
+    display: none;
+}
+
+
+.chart .left-table {
+    height: 70px;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+
+    .chart .left-table .table-content-element p {
+        transform: rotate(345deg);
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+.chart .left-table .table-content-element p {
+    font-size: 15px;
+    transform: rotate(320deg);
+    font-weight: 500;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .left-table .table-content-element p {
+       
+        font-size: 10px;
+    }
+}

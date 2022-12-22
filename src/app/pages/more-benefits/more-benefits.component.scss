@@ -1,0 +1,60 @@
+.full-page-wrapper {
+  background:  primary;
+}
+.page-section#moreBenefits{
+  padding-bottom: 3rem !important;
+}
+.content-wrapper {
+  .left-container {
+    .landing-page-container {
+      padding-top: 140px;
+      h1 {
+        color:  white;
+        margin-bottom: 29px;
+      }
+      p {
+        line-height: 1.25;
+        margin-bottom: 58px;
+        color:  white;
+      }
+    }
+  }
+  .landing_btns {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.orange-button {
+  font-family: "circularbook";
+  display: inline-flex;
+  width: auto;
+  padding: 0 32px;
+  margin: 0;
+  background: rgb(166,49,52);
+}
+
+input {
+  background:  primary;
+  color: #FFF !important;
+}
+
+input, select, textarea{
+  color: #FFF;
+}
+
+textarea:focus, input:focus {
+  color: #FFF;
+}
+.indicate{
+  margin-bottom:16px;
+}
+.errmsg {
+  border:1px solid red !important;
+}
+.disabled {
+  cursor: no-drop;
+}
+.orange-button:disabled {
+   opacity: 0.6;
+}

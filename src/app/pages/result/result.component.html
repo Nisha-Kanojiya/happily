@@ -1,0 +1,148 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+
+<!-- <section class="page-section" id="result">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mx-auto mt-4 mb-3">
+                <h2 class="masthead-subheading text-center">Results of your self-test – Happiness Index
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 mx-auto mb-2">
+                <h5 class="text-center">Your Happiness Index</h5>
+                <div style="display: block;">
+                    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                        [plugins]="barChartPlugins" [legend]="barChartLegend" height="400" width="300"
+                        [chartType]="barChartType">
+                    </canvas>
+                </div>
+            </div>
+            <div class="col-lg-7 mx-auto mb-2">
+                <h5 class="text-center">All Members’ Index</h5>
+                <div style="display: block;">
+                    <canvas baseChart [datasets]="barChartData1" [labels]="barChartLabels1" [options]="barChartOptions1"
+                        [plugins]="barChartPlugins1" [legend]="barChartLegend1" width="300" height="286"
+                        [chartType]="barChartType1">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mx-auto mb-2">
+                <div class="form-group mt-4 privacy-test text-center"><button class="btn btn-xl"
+                        [routerLink]="['/result-emotional']" type="submit">How is my emotional health?</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-12 mt-4">
+                <app-repeated-text></app-repeated-text>
+            </div>
+        </div>
+    </div>
+</section> -->
+<div class="btn-right">
+  <button (click)="generatePDF()" class="btn_yellow">Download pdf/print</button>
+  </div>
+  <div class="resultPg" >
+    <div class="resultSec know_section result-data" id="contentToConvert"  #contentToConvert>
+      <div class="container" >
+
+        <div class="secHead">
+          <div class="know_text ">
+            <div class="title-box">
+               <h1 class="page-title">Results of your self-test</h1>
+               <img src="./assets/images/border_center.png" alt="img">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12" >
+            <p><b>The first measure is your Happiness Number.</b></p>
+              <!-- <div class="pdf-container">
+                <pdf-viewer
+                  [src]="pdfSource"
+                  [rotation]="0"
+                  [original-size]="false"
+                  [show-all]="true"
+                  [fit-to-page]="false"
+                  [zoom]="1"
+                  [zoom-scale]="'page-width'"
+                  [stick-to-page]="false"
+                  [render-text]="true"
+                  [external-link-target]="'blank'"
+                  [autoresize]="true"
+                  [show-borders]="false"
+                ></pdf-viewer>
+              </div> -->
+            <div class="resultCntnt">
+              <h3>Happiness Number</h3>
+              <p style="margin-bottom: 50px;">In the first question, you had answered how happy you feel.  Your own feeling of happiness compared to all members, is important to be aware of.  It helps you set your own improvement goal.
+                <br/>
+              </p>
+              <div class="numbering">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <table>
+                      <tr>
+                        <td class="plusmin" [ngStyle]="{'color':FirstAnswerValue < 0 ? 'red' : 'green' }" *ngIf="FirstAnswerValue < 0"> {{FirstAnswerValue}}</td>
+                        <td class="plusmin" [ngStyle]="{'color':FirstAnswerValue < 0 ? 'red' : 'green' }" *ngIf="FirstAnswerValue >= 0"> {{FirstAnswerValue}}</td>
+                      </tr>
+                    </table>
+                    <p>Happiness Number reported by you</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <table>
+                      <tr>
+                        <td class="plusmin" [ngStyle]="{'color':averageOfAllMembersFirstAnswersValue < 0 ? 'red' : 'green' }" *ngIf="averageOfAllMembersFirstAnswersValue < 0"> {{averageOfAllMembersFirstAnswersValue}}</td>
+                        <td class="plusmin" [ngStyle]="{'color':averageOfAllMembersFirstAnswersValue < 0 ? 'red' : 'green' }" *ngIf="averageOfAllMembersFirstAnswersValue >= 0"> {{averageOfAllMembersFirstAnswersValue}}</td>
+                      </tr>
+                    </table>
+                    <p>Average Happiness Number reported by all members</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p><b>The second measure is your Emotional Index. </b></p>
+            <div class="resultCntnt">
+              <h3>Emotional Index</h3>
+              <p>In the test, you had also reflected on your feelings in detail. They were more 
+                towards weakening - damaging feelings, or towards strengthening – healing 
+                feelings. The Emotional Index is an average of your feelings. It measures your 
+                overall emotional state</p>
+              <div class="numbering">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <table>
+                      <tr>
+                        <td class="plusmin" [ngStyle]="{'color':yourIndexValue < 0 ? 'red' : 'green' }" *ngIf="yourIndexValue < 0"> {{yourIndexValue}}</td>
+                        <td class="plusmin" [ngStyle]="{'color':yourIndexValue < 0 ? 'red' : 'green' }" *ngIf="yourIndexValue >= 0"> {{yourIndexValue}}</td>
+                      </tr>
+                    </table>
+                    <p>Your Emotional Index</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <table>
+                      <tr>
+                        <td class="plusmin" [ngStyle]="{'color':AllmembersAverageIndexValue < 0 ? 'red' : 'green' }" *ngIf="AllmembersAverageIndexValue < 0"> {{AllmembersAverageIndexValue}}</td>
+                        <td class="plusmin" [ngStyle]="{'color':AllmembersAverageIndexValue < 0 ? 'red' : 'green' }" *ngIf="AllmembersAverageIndexValue >= 0"> {{AllmembersAverageIndexValue}}</td>
+                      </tr>
+                    </table>
+                    <p>All member's Emotional Index</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a [routerLink]="['/result-emotional']" class="btn_yellow">How is my emotional health?</a>
+      </div>
+    </div>
+  </div>
+  <app-repeated-text></app-repeated-text>
+<app-footer></app-footer>

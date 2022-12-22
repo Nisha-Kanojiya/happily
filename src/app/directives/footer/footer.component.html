@@ -1,0 +1,93 @@
+ 
+<footer>
+  <div class="container">
+    <!-- Get_section -->
+   <!-- <div class="Get_section">
+      <div class="row flexRow">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="Get_text">
+              <h3>Get Our Updates Always Fast</h3>
+              <p>10% off your next order when you sign up + be the first to know <br> about new products and special offers.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="Get_text">
+              <input type="text" placeholder="Enter Your Email Here...">
+              <button type="submit">Subscribe Now</button>
+            </div>
+          </div>
+      </div>
+    </div>-->
+    <!-- Get_section -->
+    <div class="main_footer">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="footer_Box1">
+            <a href="javascript:void(0)"><img src="./assets/images/logo.png" alt="img"></a>
+            <h3>HAPPILY IS A SOCIAL SERVICE VENTURE</h3>
+    <p>Your data is confidential and privacy protected. No one will know your identity, not even Happily!</p>
+    <p>Happily is not a typical social network – no one knows anyone’s identity, but all can learn from each other, using a privacy protected communications system.</p>
+    <p>Happily respects all faiths, is inclusive of all self-help services, and is advised by wellness experts.</p>
+    
+          
+          </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-12"></div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="footer_Box2">
+            <ul>
+              <li class="active"><a [routerLink]="['/']">HOME</a></li>
+              <!-- <li><a style="cursor: pointer;" [routerLink]="['/contact-us']" >SUPPORT </a></li> -->
+              <li><a style="cursor: pointer;" [routerLink]="['/contact-us']" routerLinkActive="active">CONTACT  US</a></li>
+              <li><a style="cursor: pointer;" href="https://chatbox.my-happy-mind.com" target="_blank">HAPPLY-CHATBOX </a></li>
+              <li><a style="cursor: pointer;" (click)="resultPopup()" routerLinkActive="active">MY RESULTS</a></li>
+              <li><a style="cursor: pointer;" *ngIf="!flagLogout"
+                [routerLink]="['/sign-up']" routerLinkActive="active">Sign Up</a></li>
+              <li><a style="cursor: pointer;" *ngIf="!flagLogout"
+                [routerLink]="['/login']" routerLinkActive="active">Login</a></li>
+                <li><a style="cursor: pointer;" *ngIf="flagLogout"
+                  (click)="logout()">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="footer_Box3">
+            <div class="info_div">
+              <ul>
+               <!-- <li><a href="tel:0000000000"><span>Cell: </span>000-000-0000</a></li> -->
+                <li><a><span>Email: </span>support@my-happy-mind.com</a></li>
+                <!--  <li><a href="javascript:void(0)">Our Location on Google Map</a></li>-->
+                <!-- href="mailto:support@my-happy-mind.com" -->
+              </ul>
+            </div>
+      <div class="footer_social">
+              <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+           <!-- <div class="footer_payment">
+              <ul>
+                <li><a href="javascript:void(0)"><img src="images/card1.png" alt="img"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/card2.png" alt="img"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/card3.png" alt="img"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/card4.png" alt="img"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/card5.png" alt="img"></a></li>
+              </ul>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy_right">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <p>© 2021 Happily . All Rights Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

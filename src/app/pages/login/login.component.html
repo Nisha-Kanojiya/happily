@@ -1,0 +1,68 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+ <div class="know_section contact_text">
+  <div class="container">
+    <div class="know_text ">
+      <div class="title-box">
+         <h1 class="page-title">Login Here</h1>
+         <img src="./assets/images/border_center.png" alt="img">
+         <div class="data-privacy-box mt-5">
+          <p class="your-data-text"><b> Your data is privacy protected and anonymous. We never ask for your ID. </b></p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="col-md-5 col-sm-7 col-xs-12 center">
+        <div class="contacy_form login_form">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" autocomplete="off">
+ 
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <input type="password" required  minlength="6" maxlength="10"
+                    formControlName="pinCode" placeholder="Pin Code" />
+                    <div class="invalid-feed"
+                *ngIf="(loginFormControl.pinCode.touched || submitted) && loginFormControl.pinCode.errors?.required">
+                Please enter pincode
+              </div>   
+                  <div class="invalid-feed" *ngIf="pinCode.errors?.minlength">
+                    Pin Code must be at least 6 characters long.
+                  </div>
+              </div>
+            </div>
+            
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <input type="password" name="username" formControlName="username" placeholder="Public User Name" required />   
+                <div class="invalid-feed"
+                *ngIf="(loginFormControl.username.touched || submitted) && loginFormControl.username.errors?.required">
+                Please enter user name
+              </div>                                                 
+              </div>
+            </div>
+           
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" *ngIf="!sendBtnDisabled"  value="Submit" class="webBtn">
+                <!-- <p class="login-status"><i><a style="color:white" [routerLink]="['/sign-up']">"If you are not a member, please sign-up first."</a></i></p> -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="save-result-text-box">
+          <p class="save-and-see-text"> <b>You must register if you want to save and see the results of your previous test.</b> </p>
+        </div>
+        </div>
+        </div>
+  </div>
+</div>
+
+<!-- <app-repeated-text></app-repeated-text> -->
+<app-footer></app-footer>

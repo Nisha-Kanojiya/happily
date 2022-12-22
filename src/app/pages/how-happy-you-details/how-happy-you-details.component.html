@@ -1,0 +1,55 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+<!-- know_section -->
+<div class="know_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 center">
+        <div class="know_text">
+          <!-- <div class="test-about-feeling-box"> -->
+          <div class="title-box">
+            <h5 class="page-title"> This test is about your feelings, not your past behavior. &nbsp; It's easy and fun
+              to take, but only if you stop thinking and start feeling!</h5>
+          </div>
+
+          <div class="remember-the-times-box">
+            <p class="test-design-style"> Remember the times you have acted on an intuition? When you were irritated or
+              got angry at someone? Or <br/> sent an email in a hurry, berating someone who disagreed with your views? Or
+              sent a huge donation to save <br/>hungry, dying pets? Did you “think” or you let your “feelings” dictate your
+              actions? </p>
+          </div>
+
+          <div class="answer-the-question-box">
+            <p class="suggestion-info-text"> Answer the questions as quickly as you can from your first impulse, your
+              heart, not your brain! If you think, you will inadvertently rationalize your answers, and defeat
+              the purpose of the test. It would become nothing more than yet another behavioral test, amongst
+              hundreds out there!
+            </p>
+          </div>
+          <div class="time-info-box">
+            <p class="time-text-style"> After the first page, there are 10 more pages to go through. Try to complete
+              them in no more than 10 minutes. As <br/>  you proceed, we will show you how much time is remaining, and how much of the
+              test you have completed. </p>
+          </div>
+          <div class="pageBtns start-test-box">
+            <button type="button" id="nextBtn" [routerLink]="['/question-page']" class="btn_yellow ml-3">Let’s start the
+              test!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- know_section -->
+
+
+<!-- 
+<div class="start-test-box">
+    <button type="button" class="btn start-test-btn" routerLink="/question-page">Let’s start the test! </button>
+</div> -->
+
+
+
+<app-footer></app-footer>

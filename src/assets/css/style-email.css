@@ -1,0 +1,82 @@
+
+
+/*my work start*/
+
+a{text-decoration: none!important;}
+.nav-tabs {border: none!important;margin: 50px 0 30px;text-align: center;}
+.nav-tabs li {margin: 0 10px;width: 30%; text-align: center; }
+.nav-tabs li a {border: none!important;margin: 0 auto !important;background:#fdd521;border-radius: 50px;font-size: 15px;color: #fff;font-weight: 600;text-align: center;transition: 1s all;padding: 10px 11px;display: inline-block;/* padding: 12px; */height: 44px; float: none; }
+.nav-tabs li a:hover {background:#268027;color: #fff;}
+
+
+.nav-tabs li.active a, .nav-tabs li a.active, .nav-tabs li.active a:hover,.nav-tabs li.active a:focus,.nav-tabs li a:focus ,.nav-tabs li a:hover {background: #268027;color: #fff; box-shadow: 1px 1px 15px 1px #f1cf00; cursor: pointer; }
+.align-center {text-align: center;}
+.note {margin: 10px 0 0 0;color: #000;text-align: right;font-size: 14px;font-weight: 700;}
+.table-bordered {border: 1px solid #fdd521;margin: 0;}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border: 1px solid #fdd521;}
+.scrollPortion table tbody {display: block;height: 208px;overflow-y: scroll;}
+.scrollPortion table thead,.scrollPortion table tbody tr {display: table;width: 100%;table-layout: fixed;}
+.scrollPortion table ::-webkit-scrollbar {width: 10px;}
+.scrollPortion table ::-webkit-scrollbar-track {box-shadow: inset 0 0 5px grey; border-radius: 0;background:#268027;}
+.scrollPortion table ::-webkit-scrollbar-thumb {background: #e5ca02; border-radius: 0;}
+.scrollPortion table ::-webkit-scrollbar-thumb:hover {background: rgb(241 207 0 / 77%); }
+thead {background: #268027;}
+thead th {padding: 10px!important;border-bottom: none!important;font-size: 20px;color: #fff;vertical-align: middle!important;}
+tbody tr {transition: 0.5s all;}
+tbody tr:hover {background: #fdd521;}
+tr:hover td {border: 1px solid #268027!important;}
+tbody tr:hover td a{color: #fff;}
+tbody td {padding: 10px!important;vertical-align: middle!important;}
+tbody td a {font-size: 16px;color: #000;vertical-align: middle!important;display: block;transition: 0.5s all;}
+tbody td a:hover {text-decoration: none;color: #000;}
+tbody td i {font-size: 20px!important;color: #268027;background: #fdd521;width: 30px;height: 30px;text-align: center;padding: 5px 0;border-radius: 50%;}
+tbody tr:hover i {background: #268027;color: #fff;}
+.singleMailTable tbody td i {margin: 0 auto 5px;text-align: center;display: block;}
+.singleMailTable tbody td .webBtn {margin: 0 auto;display: block;width: max-content;}
+.singleMailTable tbody tr:hover {background: transparent;}
+.singleMailTable tbody tr:hover a{color: #000;}
+.singleMailTable tbody tr:hover td {border: 1px solid #f1cf00!important;}
+.singleMailTable tbody tr.replyMailPart td {border: none!important;}
+.singleMailTable tbody tr.replyMailPart .webBtn {float: left;}
+.singleMailTable tbody tr.replyMailPart td {padding: 30px!important;}
+.singleMailTable tbody tr.replyMailPart td p {font-size: 16px;line-height: 27px;margin-bottom: 0px;}
+
+.singleMailTable tbody tr:hover .webBtn:hover{color: #fff;}
+
+.singleMailTable tbody tr .mailReply {margin-bottom: 50px;}
+.replyMailTable thead tr th input {width: 50%;border: none;font-size: 16px;height: 45px;padding: 10px;font-weight: 400;margin: 10px auto;display: table;color: #000;}
+.replyMailTable tbody tr td textarea {width: 100%;font-size: 16px!important;resize: none;border: none;}
+.composeMail {padding: 30px;border: 2px solid #268027;}
+.to {position: relative;z-index: 9;}
+.to label {font-size: 20px;top: 6px;position: relative;color: #000;}
+.to input {width: 85%;position: absolute;top: 0;right: 0;height: 45px;border: 2px solid #ccc;padding: 10px;font-size: 16px;line-height: normal;}
+.subject {position: relative;margin-top: 20px;}
+.subject label {font-size: 20px;top: 6px;position: relative;color: #000;}
+.subject input {width: 50%;position: absolute;top: 0;left: 100px;height: 45px;border: 2px solid #ccc;padding: 10px;font-size: 16px;line-height: normal;}
+.composeMail input[type=checkbox] {display: none;}
+.composeMail label :checked + span {background: #268027;color: white;border: 2px solid #268027;}
+.composeMail label {width: 100%;display: block;margin: 0;color: #666;font-weight: 400;}
+.composeMail label span {display: inline-block;text-align: center;padding: 10px;width: 100%;border: 2px solid #ccc;font-size: 16px;}
+.composeMail select {width: 100%;height: 45px;font-size: 16px!important;padding: 10px;border: 2px solid #ccc;color: #666;}
+.composeMailText {margin-top: 40px;position: relative;}
+.composeMailText textarea {width:100%;resize: none;font-size: 16px;color: #000;padding: 10px;border: 2px solid #ccc;}
+.composeMailText .webBtn {position: absolute;bottom: 0;right: 0;}
+.serviceProvider {border: 2px solid #268027;margin-top: 30px;padding: 30px;}
+.serviceProvider p {font-size: 16px;text-align: center;margin-bottom: 20px;}
+.serviceProvider input {width: 100%;height: 45px;padding: 10px;border: 2px solid #ccc;font-size: 15px;}
+.techcomposeMail {padding: 30px;border: 2px solid #268027;}
+.techcomposeMail .composeMailText {margin: 70px 0 20px;position: relative;}
+.catSec select {width: 30%;height: 45px;padding: 10px;font-size: 16px;line-height: normal;border: 2px solid #268027;float: right;margin: 30px 0;}
+
+
+
+.tab {width: 200px; height: 30px; background: #ccc; display: block; float: left;}
+.tab:hover {background: #333}
+/*.tab.active {background: #333;} */
+/*
+#menu1 {background: #f00; width: 400px; height: 400px;}
+#menu2 {background: #00f; width: 400px; height: 400px;}
+*/
+/*.hidden {display: none;}*/
+
+.button-row{ margin-top: 20px;}

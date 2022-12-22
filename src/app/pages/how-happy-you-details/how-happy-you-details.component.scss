@@ -1,0 +1,90 @@
+.test-about-feeling-box {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.test-is-about {
+    text-align: center;
+    font-weight: bold;
+}
+.thinking-start {
+    text-align: center;
+    font-weight: bold;
+}
+
+.remember-the-times-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.test-design-style {
+    margin-bottom: 0px;
+    color: #808184;
+    font-style: italic;
+}
+.answer-the-question-box {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.suggestion-info-text {
+    margin-bottom: 0px;
+    color: green !important;
+}
+.time-text-style {
+    margin-bottom: 0px;
+    color: #808184;
+}
+.time-info-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.start-test-btn {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: 2px solid #808184;
+}
+.start-test-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+@media (max-width: 488px) {
+    .test-is-about {
+        font-size: 15px;
+    }
+    .thinking-start {
+        font-size: 15px;
+    }
+
+    .test-about-feeling-box {
+        margin-bottom: 15px;
+         margin-top: 0px; 
+    }
+
+.test-design-style {
+    line-height: 23px;
+    font-size: 14px;
+}
+.suggestion-info-text {
+    line-height: 23px;
+    font-size: 14px;
+    color: green !important;
+}
+.remember-the-times-box {
+   
+    margin-bottom: 28px;
+}
+.answer-the-question-box {
+   
+    margin-bottom: 16px;
+}
+.time-text-style {
+    font-size: 14px;
+    line-height: 24px;
+}
+.time-info-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+}

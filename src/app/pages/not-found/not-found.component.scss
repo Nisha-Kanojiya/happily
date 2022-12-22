@@ -1,0 +1,46 @@
+  #error-404 {
+    text-align: center;
+    padding: 10% 0;
+    position: relative;
+    z-index: 10;
+    h1 {
+    font-size: 250px;
+    line-height: 250px;
+    color: #444;
+      font-family: 'Open Sans';
+      font-weight: 700;
+  }
+  h2 {
+    font-size: 54px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+  }
+  a.webBtn{
+    margin-top: 36px;
+  }
+}
+
+
+.header-main-design-style {
+  padding: 0px 0px;
+}
+
+.icon-and-nav-title-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu-head {
+  float: right;
+  margin-left: auto;
+}
+
+
+@media (max-width: 768px) {
+
+
+.icon-and-nav-title-box {
+  display: block;
+}
+
+}

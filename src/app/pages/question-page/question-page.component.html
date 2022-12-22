@@ -1,0 +1,140 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+<div class="know_section questionSec">
+  <div class="container">
+    <div class="know_text">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="know_text">
+            <div class="title-box">
+              <h1 class="page-title">Reflect on how you are feeling lately</h1>
+              <img src="./assets/images/border_center.png" alt="img" />
+            </div>
+          </div>
+
+          <div class="count-timer-section" *ngIf="isTestStarted">
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Start form feild age in yours and country -->
+
+      <!-- End form feild age in yours and country -->
+
+      <div
+        class="questions-box-style"
+        *ngFor="let questionData of questionList; let i = index"
+      >
+        <div
+          class="rating"
+          *ngIf="i <= currentIndex && i > previousIndexPosition"
+        >
+          <div *ngIf="i == 0">
+
+            <div class="row user-info-box">
+              <div class="col-md-10 col-sm-10 col-xs-12 center">
+      
+      
+                  <div class="contacy_form">
+                      <form [formGroup]="privacyTestForm" (ngSubmit)="onSubmitButton()" autocomplete="off">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <label >Age in Years</label>
+                            <input type="text" required placeholder="Age in Years" formControlName="age"
+                                  minlength="1" maxlength="3"
+                                  onkeypress="return event.charCode >= 48 && event.charCode <= 57 ||event.charCode == '.' || event.charCode == 250 "
+                                   />
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <label >Country</label>
+                              <select required formControlName="country" class="form-control">
+                                  <option value="" selected>Select Country</option>
+                                  <option *ngFor="let conutries of countryData" [value]="conutries">
+                                      {{conutries}}
+                                  </option>
+                              </select>
+                              <div class="text-danger"
+                              *ngIf="(privacyTestControl.country.touched || submitted) && privacyTestControl.country.errors?.required">
+                              Please select country
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <button id ="submitBtn" type="submit" class="webBtn" >Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+      
+              </div>
+          </div>
+          
+            <p>
+              Mind is a process that runs constantly in the brain. Emotions are
+              states of the process. They drive thoughts. Thoughts drive
+              behaviors and actions. Actions have consequences. They all impact
+              the brain. The brain impacts our emotions and body.
+            </p>
+            <h4><i>It’s all connected!</i></h4>
+            <p>Don’t analyze. Don’t dwell on a question too long.</p>
+            <p>
+              For each question, mind weakening or damaging feelings are
+              described on the left side. Mind strengthening or healing feelings
+              are described on the right side.
+            </p>
+            <p>
+              Move the star to the left or right based on how intense your
+              feelings are between the two extremes. Range is -100 to +100.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-5">
+              <h5>{{ questionData.negativeLabel }}</h5>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-md-5 col-sm-5 col-xs-5">
+              <h5>{{ questionData.positiveLabel }}</h5>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-12 center">
+              <div class="sliderContainer">
+                <ng5-slider
+                  (valueChange)="getVal($event, questionData, i)"
+                  id="slider"
+                  [(value)]="questionData.selectedValue"
+                  [options]="options"
+                ></ng5-slider>
+              </div>
+            </div>
+            <div class="pageBtns" *ngIf="currentIndex == i">
+              <button
+                type="button"
+                id="prevBtn"
+                *ngIf="currentIndex > 1"
+                (click)="getPreviousQuestionPair(questionData, i)"
+                class="btn_yellow"
+              >
+                Previous
+              </button>
+              <button
+                type="button"
+                id="nextBtn"
+                *ngIf="currentIndex <= questionList.length - 1"
+                (click)="getNextQuestionPair(questionData, i)"
+                class="btn_yellow ml-3"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <app-repeated-text></app-repeated-text> -->
+<app-footer></app-footer>

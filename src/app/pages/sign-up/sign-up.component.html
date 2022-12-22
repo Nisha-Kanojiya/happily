@@ -1,0 +1,381 @@
+<div class="image-loader" *ngIf="imageLoader">
+  <img src="./assets/images/1477.gif" />
+</div>
+<app-header></app-header>
+<div class="know_section contact_text">
+  <div class="container">
+    <div class="title-box">
+      <h1 class="page-title">Register Here</h1>
+      <img src="./assets/images/border_center.png" alt="img">
+      <div class="data-privacy-box mt-5">
+        <p class="your-data-text"><b>Your data is privacy protected and anonymous. We never ask for your ID. </b></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12 center">
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" autocomplete="off">
+          <div class="contacy_form login_form register_form">
+            <h4 class="register-before-login">Must register before you can login</h4>
+
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <input type="text" formControlName="pinCode" placeholder="Pin Code" minlength="6" maxlength="10"
+                  required />
+                <div class="invalid-feed"
+                  *ngIf="(registerFormControl.pinCode.touched || submitted) && registerFormControl.pinCode.errors?.required">
+                  Please enter pin code(minimum 6 character)
+                </div>
+                <div class="invalid-feed" *ngIf="pinCode.errors?.minlength">
+                  Pin Code must be at least 6 characters long.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <label><input type="checkbox" formControlName="terms"> I agree to the 
+                   <a data-toggle="modal" data-target="#termsNConModal" href="javascript:Void(0)"> Terms and Conditions </a>
+                </label>
+              </div>
+            </div> -->
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <input type="text" formControlName="username" placeholder="Public User Name" required />
+                <div class="invalid-feed"
+                  *ngIf="(registerFormControl.username.touched || submitted) && registerFormControl.username.errors?.required">
+                  Please enter user name
+                </div>
+                <div class="invalid-feed"
+                  *ngIf="registerFormControl.username.touched && registerFormControl.username.errors?.userNameNotAvailable">
+                  User Name is not available
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <label><input type="checkbox" formControlName="terms"> I agree to the
+                  <a data-toggle="modal" data-target="#termsNConModal" href="javascript:Void(0)"> Terms and Conditions
+                  </a>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <input type="submit" *ngIf="!sendBtnDisabled" value="Submit" class="webBtn">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="save-result-text-box">
+      <p class="save-and-see-text"><b> You must register if you want to save and see the results of your previous
+          test.</b> </p>
+    </div>
+  </div>
+</div>
+
+<!-- <app-repeated-text></app-repeated-text> -->
+
+<app-footer></app-footer>
+
+<!-- terms and condition modal -->
+<div class="modal fade" id="termsNConModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="termsNConCntnt">
+          <h4>Terms and Conditions</h4>
+          <ol>
+            <li>The visitor, and/or reader, and/or user, and/or subscriber, and/or
+              customer, and/or member, hereinafter referred to as “YOU,” or “YOUR,”
+              and the MIND Foundation, hereinafter referred to as “MF,” understand
+              and agree to the following.</li>
+          </ol>
+          <ol>
+            <li>YOU understand and agree to these statements, and also all
+              statements included in this Terms and Conditions document.</li>
+          </ol>
+          <ul>
+            <li>YOU have sufficient cognitive and physical ability to state that
+              YOU are of age 18 or more, as of the date of start of use of the
+              services provided by MF;</li>
+            <li>YOU want to simply read, see or also use the information provided
+              by MF for helping YOUR own mind and/or brain and/or body, and
+              YOU are doing so entirely voluntarily of YOUR own accord, without
+              regard to any advertising, or any influencing by MF or third
+              parties, to read, or use the services provided by MF;</li>
+            <li>YOU take full responsibility for YOUR emotions, thoughts and
+              actions. YOU are willing to try alternative ways of strengthening
+              YOUR mind. YOU are willing to adopt mind-strengthening
+              solutions as readily as for physical fitness, but based on YOUR
+              own will. For YOU, there is no stigma for anyone strengthening the
+              mind or improving emotional health;</li>
+            <li>YOU are not aware of, or have been informed by family or friends
+              that you have mental illness, or are being treated by a
+              psychiatrist, psychologist, neurologist, or physician, or any
+              certified practitioner;</li>
+            <li>YOU are not aware of, or have been informed by family or friends,
+              or by a psychiatrist, psychologist, neurologist, or physician, or any
+              certified practitioner, that YOU have a physical condition, or
+              undergoing treatment for a physical condition that can worsen by
+              using the services of the MF;</li>
+            <li>YOU understand that MF’s products or services are not intended
+              for those who have serious mental illnesses, or those who want or
+              need instant relief of symptoms;</li>
+            <li>YOU are aware that in case of emergencies YOU can call the
+              mental-health helpline: (800) 950-NAMI, or text NAMI to 74141.</li>
+          </ul>
+          <br>
+          <ol>
+            <li>The MIND Foundation (MF) is incorporated in the Commonwealth of
+              Massachusetts, and is in the business or service of publishing general
+              health or other information, including analysis, tools, data, output of
+              models, ratings, and publicly available information to the public or
+              other organizations. MF does not provide or publish any customized
+              information specific to any customer. All MF information is intended for
+              educational, entertainment and general informational purposes, and
+              MF does not claim or guarantee any usefulness of the information or
+              tools provided for improving the mental health of any individual.</li>
+          </ol>
+          <ol>
+            <li>MF’s products and services do not claim successful outcomes, and do
+              not necessarily follow established cognitive behavioral, or mental illness
+              treatment practices. They are NOT a REPLACEMENT for certified
+              psychological, psychiatric, neurological, or any other government
+              approved medical treatment.
+            </li>
+          </ol>
+          <ol>
+            <li>MF or its management or employees are not currently practicing
+              psychiatrists, psychologists, neurologists or certified medical
+              practitioners. MF or its management or employees are not registered
+              as patient advisors in the professions of psychology, psychiatry,
+              neurology or other mental illness or disease related fields, unless
+              otherwise explicitly identified and stated.
+            </li>
+          </ol>
+          <ol>
+            <li>Use of MF’s products and services is entirely voluntary.</li>
+          </ol>
+          <ol>
+            <li>This document constitutes MF’s Terms of Use & Privacy Policy for MF’s
+              website, website contents, information, services, products, including
+              MF’s My-Happy-Mind.com and including its other websites, if any.
+            </li>
+          </ol>
+          <ol>
+            <li>This document, website, website contents, information, services and
+              products contained herein are the property of MF, and are protected by
+              copyright and intellectual property laws. My-Happy-Mind is a
+              registered service mark belonging to MF. All rights are reserved. All
+              other trade or service marks, if any referred to in the information
+              provided by MF are acknowledged as belonging to thirds parties.
+            </li>
+          </ol>
+          <ol>
+            <li>This document, website, website contents, information, services and
+              products are not intended to be advice, recommendations, directions,
+              or suggestions, nor are they indented for YOUR past, current or future
+              decisions, actions or inactions.
+            </li>
+          </ol>
+          <ol>
+            <li>MF makes no warranties of any kind, whether explicit or implied, about
+              the meaning, usefulness, applicability, completeness, correctness,
+              timeliness, accuracy, or accessibility of the website, website contents,
+              information, services and products contained therein.
+            </li>
+          </ol>
+          <ol>
+            <li>MF does not warrantee that its website, website contents, information,
+              services, products, website servers, or technology, are free of computer
+              viruses and other harmful effects.
+            </li>
+          </ol>
+          <ol>
+            <li>MF bears no responsibility for servicing or replacement of equipment,
+              lost productivity, downtime, costs or damages, incurred during the use
+              of MF website, website contents, information, services, products, website
+              servers, or technology.
+            </li>
+          </ol>
+          <ol>
+            <li>MF and its suppliers, to the fullest extent permitted by law, disclaim all
+              warranties, including the warranty of merchantability, non-infringement
+              of third-parties’ rights, and the warranty of fitness for particular
+              purpose.
+            </li>
+          </ol>
+          <ol>
+            <li>MF or its management or employees shall not be liable for any punitive,
+              incidental, special, consequential, indirect or exemplary damages,
+              including but not limited to damages for loss of profits, goodwill, other
+              tangible or intangible losses, mental or physical pain, or suffering
+              caused by the use of the contents, or reliance on the contents of this
+              document or MF’s website, website contents, information, services, or
+              products in any manner.
+            </li>
+          </ol>
+          <ol>
+            <li>YOU understand that MF provides or publishes information uniformly
+              from time to time, and does not provide any customized information
+              that is specific only to YOU.
+            </li>
+          </ol>
+          <ol>
+            <li>YOU are at YOUR own risk in using this information to draw any future or
+              current conclusions or arrive at any decisions, actions or inactions.
+            </li>
+          </ol>
+          <ol>
+            <li>YOU agree to indemnify and hold MF, its management and employees
+              harmless from any claim or demand, including attorneys’ fees or other
+              costs. YOU agree not to start, or enter into any manner of litigation
+              against MF.
+            </li>
+          </ol>
+          <ol>
+            <li>YOU may not reproduce, reverse engineer, retransmit, disseminate, sell,
+              publish or broadcast MF website contents, information, services and
+              products; nor shall YOU use this information in connection with
+              commercial purposes, including creating, promoting, trading, or
+              marketing products without the express written consent of MF.
+            </li>
+          </ol>
+          <ol>
+            <li>YOU are entitled to use the contents for YOUR private, non-commercial
+              use only.
+            </li>
+          </ol>
+          <ol>
+            <li>If in case YOU are an advisor or practicing professional dealing with the
+              fields of psychology, psychiatry, neurology, executive emotional or
+              mental health services, or brain sciences or treatment practices, YOU
+              will need prior written permission of MF to use MF provided information,
+              services or products, and will abide by the Terms & Conditions stated in
+              this document, and in such cases, If YOU use the information, services or
+              products provided by MF, without prior written permission from MF, YOU
+              will be held liable to compensate MF for all damages, without further
+              recourse.
+            </li>
+          </ol>
+          <ol>
+            <li>If YOU violate, or cause to violate any of the Terms of Use & Privacy
+              Policy, or agreement clauses, YOU will be held liable to MF for all
+              financial and other damages to, or incurred by MF.
+            </li>
+          </ol>
+          <ol>
+            <li>MF does not automatically collect or store personal information for any
+              purpose. MF web servers do, however, collect non-personal information
+              automatically to record the IP addresses of visitors, the date and time of
+              access, the pages visited, whether or not the pages were successfully
+              retrieved from our server, and various other status codes and values.
+              This is done so that MF can better understand how its online
+              environment is being used and accessed.
+            </li>
+          </ol>
+          <ol>
+            <li>MF does not require, nor collect any credit card numbers, social security
+              numbers, bank account numbers, birth dates, financial records, or other
+              such information, to register, SIGN UP for, subscribe to, or use MF
+              published information.
+            </li>
+          </ol>
+          <ol>
+            <li>MF does not give, sell, or transfer personal information to third parties,
+              other than those directly involved in providing a service or fulfilling a
+              request on behalf of MF, or unless MF is required to do so by law.
+            </li>
+          </ol>
+          <ol>
+            <li>In the event YOU purchase a current or future product or service online
+              through MF or linked websites, for reasons of security, YOUR credit card
+              or other financial information is processed by an authorized third-party
+              payment gateway in a secure environment. MF does not store YOUR
+              credit card or any financial information on its web servers. MF retains
+              only the order information for its records, to fulfill a request for a
+              product, a service, or for information regarding an order. MF does not
+              share this information with third parties, other than its employees and
+              contractors engaged in the fulfillment of service.
+            </li>
+          </ol>
+          <ol>
+            <li>This website may contain links to third party websites. These links are
+              provided solely as a convenience for YOU. MF is not responsible for the
+              content or functionality of linked third-party websites, and does not
+              make any representation regarding the content, usefulness,
+              functionality, or accuracy of materials on such third-party websites. If
+              YOU decide to access a linked third-party website, YOU do so at YOUR
+              own risk.
+            </li>
+          </ol>
+          <ol>
+            <li>When YOU send information through an electronic mail (email)
+              message, or any other input form, or post a comment to a blog on any
+              digital or hard copy platform, or any other method provided by MF, YOU
+              do so at YOUR own risk.
+            </li>
+          </ol>
+          <ol>
+            <li>A “cookie” is a file placed on YOUR computer by a website that allows it
+              to store information about YOUR visit, which can be retrieved at a later
+              time, sometimes without YOUR knowledge. MF, its websites, and
+              websites linked by MF may use cookies now or in the future. YOU can set
+              YOUR web browser to warn YOU when placement of a cookie is
+              requested, so that YOU can decide whether or not to accept it. If YOU
+              completely disable cookies on YOUR web browser, some features of
+              websites may not work properly.
+            </li>
+          </ol>
+          <ol>
+            <li>If any fees are charged, MF shall prorate and refund remaining months
+              of total fees, that were paid by YOU, for unused months of service, if for
+              any reason, YOU inform MF of YOUR decision to discontinue receiving MF
+              services, by email, and also by paper copy sent by registered US postal
+              mail. Such refund shall be made within 20 business days of the receipt
+              of such notice from YOU. However, MF can refuse to make any refunds,
+              if MF deems at its sole discretion, that YOU are starting and stopping MF
+              services and repeating the cycle, to get MF information only when YOU
+              want during the year, so as to avoid paying the full annual subscription
+              fees.
+            </li>
+          </ol>
+          <ol>
+            <li>This Terms of Use & Privacy Policy document may occasionally be
+              updated. Notice of revision will be posted here by identifying the date
+              of latest revision, at the top of the page.
+
+            </li>
+          </ol>
+          <ol>
+            <li>Any disputes shall be resolved in the jurisdiction of the Commonwealth
+              of Massachusetts.
+            </li>
+          </ol>
+          <ol>
+            <li>MF has the sole right to appoint an arbitrator of its choice, in case of any
+              arbitration proceedings.
+            </li>
+          </ol>
+          <ol>
+            <li>If YOU have questions or comments about this document, please email
+              MF at support@My-Happy-Mind.com, or send a registered, signature-required
+              letter to MF’s registered address.
+            </li>
+          </ol>
+          <ol>
+            <li>MF has its head-office located at 9 Goodnow Avenue, Ashland, MA 01721.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
